@@ -1,0 +1,56 @@
+<html>
+<head>
+    <title>t1</title>
+    <link href="t1.css" rel="stylesheet">
+    <link href="style.css" rel=" ">
+</head>
+<body>
+<div class="hero">
+    <div class="row">
+        <div class="col">
+            <div class="slider">
+                <div class="product">
+                    <img src="t1.png" alt="" onclick="clickme(this)">
+                    <img src="t1(1).png" alt="" onclick="clickme(this)">
+                    <img src="t1(2).png" alt="" onclick="clickme(this)">
+                    <img src="t1(3).png" alt=""onclick="clickme(this)">
+                </div>
+                <div class="preview"></div>
+                <img src="t1.png" id="imagebox" alt="">
+            </div>
+        </div>
+        <div class="col">
+           <div class="content">
+            <p class="brand">Brand:Babyhug</p>
+            <h2>Babyhug Cotton Half Sleeves T-Shirt Lion & Tiger Print Pack of 3- Green Orange & Blue</h2>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <p class="price">Brand:Babyhug</p>
+            <p>Size:<select name="size">select size
+                <option value="select size">select size</option>
+                <option value="1 year">1 year</option>
+                <option value="2 year">2 year</option>
+                <option value="3 year">3 year</option>
+                <option value="4 year">4 year</option>
+            </select></p>
+            <p>Quantity:<input type="text" value="1"></p>
+            <button type="button">
+            <i class="fa fa-star"></i>
+            Add to cart</button>
+           </div> 
+        </div>
+    </div>
+</div>
+<script>
+    function clickme(smallImg){
+        var fullImg = document.getElementById("imagebox");
+        fullImg.src = smallImg.src;
+    }
+</script>
+</body>
+</html>
