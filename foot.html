@@ -1,0 +1,60 @@
+<html>
+    <head><title>foot fashon</title>
+        <style>
+            body{
+        background-color:#ffb6c1ce;
+        scroll-behavior:smooth;
+      }
+ a:link, a:visited {
+  background-color: #998988;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.img{
+  width:30%;
+  position:absolute;
+  top:60%;
+  left:40%;
+  transform:translate(-50%,-50%);
+}
+        </style>
+    </head>
+    <body>
+        <div>
+            <h3><a href="homemain.html" target="_blank">Home</a>&emsp;
+            <a href="tshir.html" target="_blank">Tshirts</a>&emsp;
+            <a href="short.html" target="_blank">shorts</a>&emsp;
+            <a href="Night.html" target="_blank">Night wear</a>&emsp;
+            <a href="jeans.html" target="_blank">Jeans and trousers</a>&emsp;
+            <a href="socks.html" target="_blank">Socks</a>&emsp;
+            <a href="jackets.html" target="_blank">Jackets</a>&emsp;
+            <a href="sweates.html" target="_blank">Sweater</a>&emsp;
+            <a href="summer.html" target="_blank">summer cap</a>&emsp;
+          </div>
+          <div class="baby img" style="max-width:900px">
+            <img class="mySlides" src="https://th.bing.com/th/id/OIP.N5JCQONj-TcFzhTfJpzBdwHaHa?pid=ImgDet&rs=1" width="747" height="600" >
+            <img class="mySlides" src="https://www.articlestheme.com/wp-content/uploads/2021/05/201110321-12-768x1024.jpg" width="747" height="600" >
+            <img class="mySlides" src="https://th.bing.com/th/id/OIP.zbcGdFFED1a7al3g3eMI3AHaHa?pid=ImgDet&rs=1" width="747" height="600">
+            <img class="mySlides" src="https://i.pinimg.com/originals/bb/8c/a1/bb8ca168a5d052f8fe9fd325a1712fb9.jpg" width="747" height="600">
+          </div>
+          <script>
+          var myIndex = 0;
+          carousel();
+          
+          function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 2000);
+          }
+          </script>
+    </body>
+</html>
